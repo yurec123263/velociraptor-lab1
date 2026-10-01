@@ -1,0 +1,7 @@
+server.config.yaml
+client.config.yaml
+*.log
+*.tmp
+*.bak
+*.deb
+*.msi

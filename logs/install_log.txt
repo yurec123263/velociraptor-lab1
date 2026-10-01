@@ -1,0 +1,29 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260929212201
+Username: CLIENTWI\vboxuser
+RunAs User: CLIENTWI\vboxuser
+Configuration Name: 
+Machine: CLIENTWI (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6432
+PSVersion: 5.1.22621.3958
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3958
+BuildVersion: 10.0.22621.3958
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Install\install_log.txt
+=== Velociraptor Installer ===
+Date: 09/29/2026 21:22:02
+Slushba 'Velociraptor' yshe ystanovlena
+Tek status: Running
+Slushba yshe rabotaet, nichego delat ne nushno
+=== Gotovo ===
+**********************
+Windows PowerShell transcript end
+End time: 20260929212204
+**********************

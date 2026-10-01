@@ -1,0 +1,6 @@
+name: Custom.Detection.NewInTemp
+description: Detecs recent file creation in temp directories.
+sources:
+  - query: |
+      SELECT FullPath, Mtime, Btime, Size, hash(path=FullPath).SHA256 AS hash      FROM glob(globs=["C:/Windows/Temp/**", "C:/Users/*/AppData/Local/Temp/**"])
+      WHERE Btime > timestamp(epoch=now() - 86400)

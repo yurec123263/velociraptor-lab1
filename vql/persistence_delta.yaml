@@ -1,0 +1,7 @@
+name: Custom.Detection.Persistence_delta
+description: Monitors persistence locations
+sources:
+  - query: |
+      SELECT OSPath, Name, Data.value as Command
+        FROM glob(globs
+          ='HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\*', accessor='registry')

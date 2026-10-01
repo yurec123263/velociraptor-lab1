@@ -1,0 +1,21 @@
+---
+- hosts: linux_clients
+  become: yes
+  tasks:
+
+    - name: Copy binary
+      ansible.builtin.copy:
+        src: /home/kali/velociraptor-lab/files/velociraptor
+        dest: /opt/velociraptor/velociraptor
+        mode: "0755"
+
+    - name: Copy config
+      ansible.builtin.copy:
+        src: /home/kali/velociraptor-lab/files/client.config.yaml
+        dest: /opt/velociraptor/client.config.yaml
+
+    - name: Ensure service is running
+      ansible.builtin.systemd:
+        name: velociraptor_client
+        state: started
+        enabled: yes
