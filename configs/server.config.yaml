@@ -1,0 +1,245 @@
+version:
+  name: velociraptor
+  version: 0.77.2
+  commit: c0c9dd609
+  build_time: "2026-08-10T00:58:52Z"
+  compiler: go1.25.3
+  system: linux
+  architecture: amd64
+Client:
+  server_urls:
+  - https://velociraptor.lab:8000/
+  ca_certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIDSzCCAjOgAwIBAgIQE5ywBocyPYj+aHhOjb25NjANBgkqhkiG9w0BAQsFADAa
+    MRgwFgYDVQQKEw9WZWxvY2lyYXB0b3IgQ0EwHhcNMjYwOTE4MTkyMjIyWhcNMzYw
+    OTE1MTkyMjIyWjAaMRgwFgYDVQQKEw9WZWxvY2lyYXB0b3IgQ0EwggEiMA0GCSqG
+    SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC9HKSTduMP7LyWRAsf8DNpJ6wcnxUoZMDl
+    fd+LI3zgWplAZk3gMzYjxs2FEa0XLZV7FsRE0PR+DhCg6Ywq78pG2hza2kxTEukZ
+    ZocQELFTwGHQ4WjErGhauB3zY7qOPV6hWiLWC8WMEivHihKInXBuGFv1YHt5S8/R
+    FC/IJCENbP/6pVslbWViI+IXgFVN3vx5Mue0J2p1NqrwAHLlN4fECBLx5/cqXkU1
+    gKAu15sh+oFADVHUvUiSlyN/ZjGC/EFfvk0eiKzW246BdRTXeBWxExtGgzcwIQyN
+    06bnULw4JjiVv/Ilhx2v8RBwQiggj/4xErRJZtWhx57YOjSgtKgbAgMBAAGjgYww
+    gYkwDgYDVR0PAQH/BAQDAgKkMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
+    AjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQUVsMIZWZJKDsJKY9si7VwNbL5
+    GTAoBgNVHREEITAfgh1WZWxvY2lyYXB0b3JfY2EudmVsb2NpZGV4LmNvbTANBgkq
+    hkiG9w0BAQsFAAOCAQEAXir2v42xc9350l+zKkRhCnTIvu+4WYiH5BfHyHwYX7Dy
+    5r8XWuoaYy/bVM1vJl/+vF/xKw3l/Tnk7OB+x349vvZ8SCmg87NbddxQkSsw6FI1
+    MvEvb01CO4N1NJV/OkpyD2zki36IRqZD6kuh2tb5+naMAN3OKTQar2eZNbKnzTcv
+    nrMF4JvfAdykTEp9Dgs7gC8lFJc7LMv0mnBMr3AyYLg87ewRuXmQ3iUD8ZaQxP2v
+    2neEdTS5OYCUB5VfKKbalQ/BlYRKfvX/SsV0Yatc4pwJGNqUN5rEgOIs/+jnxa5c
+    kjflX+CiI2cbQruR3Ke1KB8fvpVzXuuHWJ7GXZ+QoA==
+    -----END CERTIFICATE-----
+  nonce: cfT0t0YTokk=
+  writeback_darwin: /etc/velociraptor.writeback.yaml
+  writeback_linux: /etc/velociraptor.writeback.yaml
+  writeback_windows: $ProgramFiles\Velociraptor\velociraptor.writeback.yaml
+  level2_writeback_suffix: .bak
+  tempdir_windows: $ProgramFiles\Velociraptor\Tools
+  max_poll: 60
+  nanny_max_connection_delay: 600
+  windows_installer:
+    service_name: Velociraptor
+    install_path: $ProgramFiles\Velociraptor\Velociraptor.exe
+    service_description: Velociraptor service
+  darwin_installer:
+    service_name: com.velocidex.velociraptor
+    install_path: /usr/local/bin/velociraptor
+  server_version:
+    version: 0.77.2
+    commit: c0c9dd609
+    build_time: "2026-08-10T00:58:52Z"
+  use_self_signed_ssl: true
+  max_upload_size: 5242880
+  local_buffer:
+    memory_size: 52428800
+    disk_size: 1073741824
+    filename_linux: /var/tmp/Velociraptor_Buffer.bin
+    filename_windows: $TEMP/Velociraptor_Buffer.bin
+    filename_darwin: /var/tmp/Velociraptor_Buffer.bin
+API:
+  bind_address: 127.0.0.1
+  bind_port: 8001
+  bind_scheme: tcp
+GUI:
+  bind_address: 127.0.0.1
+  bind_port: 8889
+  gw_certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIDQTCCAimgAwIBAgIQFlz+rxWTsnScOF9qj4DsljANBgkqhkiG9w0BAQsFADAa
+    MRgwFgYDVQQKEw9WZWxvY2lyYXB0b3IgQ0EwHhcNMjYwOTE4MTkyMjIyWhcNMjcw
+    OTE4MTkyMjIyWjApMRUwEwYDVQQKEwxWZWxvY2lyYXB0b3IxEDAOBgNVBAMMB0dS
+    UENfR1cwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDjsgieKVMSLeFd
+    iWyFtyqzq9q1ptCtQcSEvBl6jWQxDURKJ0Ra7O8rHTjR5SaNz+NmtgfrNeyKMiFZ
+    X4DN9doCRWh9cdCHefKrXRUm3k1ZCZM5Y6aU8sqYjfYhEO3hh4gJnc290RXEdCuT
+    6QJS49wPuBb66qmMbvTcU9agN3Y3MGKFw/lxN61sO3v9FXTVFcosuFFYQxupZvhd
+    cTkZkWGvRo44UgpSfRJ6KeqhWsR9W3z3mt9PnY7Qg/3SpGA2buxWwVv7k+Ao8qIn
+    hIXgA4EZzm0Vf20tvBfRK+8UUuAiLam7iB/PenPdS3TQqK3xEdHtID7qT2jNWvuS
+    REL0siULAgMBAAGjdDByMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEF
+    BQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBQUVsMIZWZJ
+    KDsJKY9si7VwNbL5GTASBgNVHREECzAJggdHUlBDX0dXMA0GCSqGSIb3DQEBCwUA
+    A4IBAQALwxKb9knBnkgUrw0rbo0Sm35VrBU5hxLSwtfNNqwABYzQZOlKYIk+9ve6
+    2d29sn7VF226D/+wyDuwgkwdEPPzumW7nwgflUX5TzHHSKhI2727xOMgf/dO+Snl
+    3CGkXYdxw80dttvjvEVOvMBh5zHn2gu1hjuE3jjOCc76YDZfTjGUDyJIvn4vxBT0
+    h1gzICVqxRtpbyS/XZ89X361ZhWc9Jscf9XZ6LLrBbUz2y0pSQocQ8diNSQqHeM+
+    7ffQP5yrgQ48zpLEGyFrxZNL+PUsPY4VPdhZXPr3gFXJGw35s82MIK291ESqfZSo
+    /Ci+yoF5Gt0gjh3xA+EK0rQ4HEDX
+    -----END CERTIFICATE-----
+  gw_private_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEA47IInilTEi3hXYlshbcqs6vatabQrUHEhLwZeo1kMQ1ESidE
+    WuzvKx040eUmjc/jZrYH6zXsijIhWV+AzfXaAkVofXHQh3nyq10VJt5NWQmTOWOm
+    lPLKmI32IRDt4YeICZ3NvdEVxHQrk+kCUuPcD7gW+uqpjG703FPWoDd2NzBihcP5
+    cTetbDt7/RV01RXKLLhRWEMbqWb4XXE5GZFhr0aOOFIKUn0SeinqoVrEfVt895rf
+    T52O0IP90qRgNm7sVsFb+5PgKPKiJ4SF4AOBGc5tFX9tLbwX0SvvFFLgIi2pu4gf
+    z3pz3Ut00Kit8RHR7SA+6k9ozVr7kkRC9LIlCwIDAQABAoIBACjitxlvYjNJecZJ
+    /uqj0U8h9MvZgG8b+CW9gPW4nd0Q/Moz8tpA4VFkledatmmQgszWsuVRcX//MG3T
+    8FULaHIv9GtSHJe3FhQfSsUH9eufBIixlB/62NY7545Yc96jb5IKe/8xpC76jTiq
+    BnjL4aAQ9k9oA7nr0pwdkdSDIP8XollHhZgGF9wuUdjIynO39bx2avcWBsk/mibU
+    j/DFUAhOapSmrjcGvPhJhIKgFPYqMU0JO38gtkpYRB+nGD5kQWmLOpFPNzElqpxg
+    vEpeY1l8x+2lEkiV3l79oFNL+m2JVSN+3FxG8RUCjd29sEqNYVoAMyXKCbYu0nlz
+    xNEBqkECgYEA6dx0CovfyKO79TeAzEv69i61wppnEAzb0qNrL/sFm9e/nv0DsJqy
+    BScczycw8SkETB4sRK3VFPv7u341La530Vxl9lPj6Q5TVtRqHf9p0OwWd+x4uUqa
+    JMbK0fI7qlqxA/F0JHc7JtrxJplWaTbsXm/43LmAkUbue9YOttYXHY8CgYEA+UAo
+    GsL6nY4QMHjGiPAULuoUfsj52dq1MGBs6jMkNOz3eE00LvTFONp6/aCyzA7rpq9v
+    dmz1x7rOmd6LkRWz7v70dIXi8gyYE8Og6tr5G2JyfQaiHTolGsm6DwQ82a8KbMav
+    OIkUBkQ7Q/EcA3XNevxWQo+Kznh9XZ588BVqOsUCgYANiAPu2EkKgu7NMXjyWTMc
+    K3e42tY7x4KwnWQGUq/wZHth56HfBhRm1+yCz/G1AnqNLPHCx4wcurfGEXdiPUYR
+    hxcfOZtmUL3huEirk6u7uu1R4wzZK8ffeOEjZLCvGrBDWiUuNvflN6XcZeLqE5N5
+    o2Dy5Ijb3w7Ne4U+bwTHYQKBgQCTwC1F1+j59pmwMhf2WuKMAOSPV5GMS7J2b+KA
+    XjqLSSFVZeaWIzC6CAE6UcVLY1jboUlgmSyE7j7ERYDUS1ozRV0hqbAjLcYEiUXd
+    klpymkQlywXUb4BJReWOO0PbAoEahBigWdnN8Sp0lvu1LWLWEbkMkcyFojUmhumm
+    4/rpxQKBgQDcLOSfP/NmRoHF33g/jUDIMxpQJZJ11N8PscgGIIrV/qe3Lh8TJGud
+    16H8H1+MBC4b7jxxLVqwjzTGV+Wlzg/f0JCRFg5V4dPcJTYXfKPPHt3KCeYtKySL
+    EKbl2igXNm1fIaMcMGxABjBTyYfXEY3ks6qsxPJ0Dpp0ZF5cZPG8cQ==
+    -----END RSA PRIVATE KEY-----
+  public_url: https://velociraptor.lab:8889/app/index.html
+  links:
+  - text: Documentation
+    url: https://docs.velociraptor.app/
+    icon_url: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MyIgaGVpZ2h0PSI2MyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTMgNjMiPjxwYXRoIGQ9Ik0yNyAzYy0zIDItMTMgOC0yMyAxMGw2IDMyYTEwMyAxMDMgMCAwIDAgMTcgMTZsNi01IDExLTExIDYtMzJDMzkgMTEgMzAgNSAyNyAzeiIgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0iTTI2IDBDMjMgMiAxMiA4IDAgMTBjMSA3IDUgMzIgNyAzNWExMTMgMTEzIDAgMCAwIDE5IDE4bDctNiAxMi0xMmMyLTMgNi0yOCA4LTM1QzQwIDggMjkgMiAyNiAwWm0wIDU1LTYtNC04LTktNS0yNnYtMWwyLTFjOC0xIDE2LTYgMTYtNmwxLTEgMSAxczggNSAxNyA2bDEgMXYxcy0zIDIzLTUgMjZsLTggOWMtMiAyLTQgNC02IDR6IiBmaWxsPSIjYWIwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Ik0zOSAxOWExMzQ3IDEzNDcgMCAwIDEtMTMgMjZoLTJMMTQgMTloM2wyIDEgMSAxdjFhMjUwIDI1MCAwIDAgMSA2IDE3IDUyODkgNTI4OSAwIDAgMCA5LTIwaDR6IiBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWRhc2hhcnJheT0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==
+    type: sidebar
+    new_tab: true
+  initial_users:
+  - name: admin
+    password_hash: ad0f34e8d766d8311e58ee1f112c35bce7a2a524da2760404c3eff8507bcbbfa
+    password_salt: 53577d203c7ca043d6b19252bd1524a9e05d5d3eb56a75669a847bb2f32abd8c
+  authenticator:
+    type: Basic
+CA:
+  private_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEogIBAAKCAQEAvRykk3bjD+y8lkQLH/AzaSesHJ8VKGTA5X3fiyN84FqZQGZN
+    4DM2I8bNhRGtFy2VexbERND0fg4QoOmMKu/KRtoc2tpMUxLpGWaHEBCxU8Bh0OFo
+    xKxoWrgd82O6jj1eoVoi1gvFjBIrx4oSiJ1wbhhb9WB7eUvP0RQvyCQhDWz/+qVb
+    JW1lYiPiF4BVTd78eTLntCdqdTaq8ABy5TeHxAgS8ef3Kl5FNYCgLtebIfqBQA1R
+    1L1Ikpcjf2YxgvxBX75NHois1tuOgXUU13gVsRMbRoM3MCEMjdOm51C8OCY4lb/y
+    JYcdr/EQcEIoII/+MRK0SWbVocee2Do0oLSoGwIDAQABAoIBABF/JmzsWXq+NP6U
+    IhFc6GzIumBViaAYnk49VKLrcCDT0Q0Hyhm9szshKB+xMHoOAiAGzbbuPEizZW91
+    3D2WvPjMMlI/U0N2YvGyLjnayYVNrd8lE8vqhacrFL5Rkk+ZtvknvURfh3H7tmg6
+    SpewNVhCUbPErvfcf0hBXWBfk11J+St5JL13xTo4zQDJBIfQxE45KiVz/66jVqSD
+    efLpdpdR7899V3s0LYCIBlcnuURs1Tki0K0p+VaXmiQK8CmieuwclZ0J3u74/JjX
+    U3oKEsOnyrggltnSapuoR2BZhYf7c3ZAAf5QbvTTPeIagEnI9jItRWVjvNCepp41
+    nBLnNKkCgYEA5xjjflXGFiLQEczwhOFzed1YQkazJ0NTpWM3H2dNsZjdrZf6stIe
+    VpZ1nAPaKhK0phQvi1va8JYpFC2PmW4aU/h2Sud6//qyGZPN5ltpFr6D4R9IDLbP
+    vKYi8uUckdID08Jx+MZ0r1QI/wii2sQfPnQZiCh7gy6D6orVFJh6RpkCgYEA0X2J
+    Bo/We2N3ZT09k+MmlMjszmWdwkVUAuAPXtUksOBkofYB1EqVvDkaIurgYGXMV1dZ
+    42+W5ZFHSs0jUei8VAPPoWDvqHnLB3WlerfcYfGAac0/Y4mqoZOCN7qlPEH+swd3
+    7itl42cQt4Z4AAX8GKsdoEopkQwUo+fjj8QzONMCgYBZOircJJIPCfH8bXyQUdwc
+    OXJSZKnXhw9M1Dn8Tg6Ze8Rbukp5sNc153IRgwtBI2fMmA6jaBvouJGz0MOZIgHY
+    Wh6SXT4Ih+ssJP1i6/hvZ6/TxBg1kIA0/pCP6BZX1xbTNEh9HWMALxoqHlOC1Cac
+    HoedIsRNqjAU5vXOtfDAQQKBgA7DxUOUIa7CnOiiv1NMAC0eWCpX2R2XG0u0lQC/
+    Dv30YsNTfl+C/jis4Z2yZiwFILjLLEeuVrlJWvf3q1SbjaJyPlEGbv21z8xvy0Dx
+    8nNovP83+w695ivLJLNe0USE9jmR/i7oGh9D5Va6AH0n7tOiQ81HTNSvQEkpD83T
+    KzUHAoGABBT0lm7/3F3ya+qkF4we4h8B5V1kYRE3DUwuKTk33grZ60LSfESlzwS1
+    9ipC1rAuG+rwuAjtmVmqQr+ISSy+PzpJJJhqFPEX8rRCAxZxam3LrMHjkZbujPeB
+    ygMKl0I5/eNq7PQ4OG5WFs0rsVQ242BrTsMWy1msvU6NQRL3EHY=
+    -----END RSA PRIVATE KEY-----
+Frontend:
+  hostname: velociraptor.lab
+  bind_address: 0.0.0.0
+  bind_port: 8000
+  certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIDWDCCAkCgAwIBAgIRAMQmpKSnEjpOs40YQHD/C2QwDQYJKoZIhvcNAQELBQAw
+    GjEYMBYGA1UEChMPVmVsb2NpcmFwdG9yIENBMB4XDTI2MDkxODE5MjIyMloXDTI3
+    MDkxODE5MjIyMlowNDEVMBMGA1UEChMMVmVsb2NpcmFwdG9yMRswGQYDVQQDExJW
+    ZWxvY2lyYXB0b3JTZXJ2ZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+    AQDjRogN2z0ZdlPLkC2Pi+TDleOG0wSDHtv3fONCH3bi4FdP14jDlj9rQzOqmRGt
+    h15YyDy2Jwz8avzFN9srXDzG/F9GDWX8TURky7FcDD7SmOG5MZUPyeHkEcqCLIPk
+    brgi7BaX29hV4ab910xzKVDPnY31kmJtyv6zAy17DTxPLCbhCajj+KaMvmZOqFOe
+    5shmLDEJKCVE2jBCpUv6p1jJyCVtyMlsEB0xrQICoq9SKjTJl3RkzgzEkK5VRRQO
+    enjwpiRozBLVTARX9ll2r+CBnVFYDf83IsMdSuQZz8VeDD7bJiwSuhhka9mNIYc/
+    O9oXlp6QW9RBGkXNWOArOconAgMBAAGjfzB9MA4GA1UdDwEB/wQEAwIFoDAdBgNV
+    HSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAfBgNVHSME
+    GDAWgBQUVsMIZWZJKDsJKY9si7VwNbL5GTAdBgNVHREEFjAUghJWZWxvY2lyYXB0
+    b3JTZXJ2ZXIwDQYJKoZIhvcNAQELBQADggEBAAcqvT0yPuRbhWY7VNqwiuQPtcng
+    OFiNtjqr+eZh5laxBxytEg8xsoV8OSNtK4a5ydPppO0+GztwmPhAQsahw3bKlzDj
+    21Y/YaGOeNNwMGS85JpD2bnhyhAqPJLRhzYzpq5IaJnjRFL1kqyBDgmJn+f1JQ76
+    LQ3UJFeUvSxWLHgOp3uyUYwRqg4Gf2wx7a68O2JlQyo6OZ1tDr34Rdtaapawag8a
+    vJ9SE5BtRES7vhGGltkfHL/45YV87nCA9zg7lMcBXNgzUJdA9noj5B9R0vV0l3bZ
+    1tFCVgMwGF8xvQC4x1hufse6PV1Ss+5Zh7noOwVDQcrOAfo4XUX+wh3LgnM=
+    -----END CERTIFICATE-----
+  private_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA40aIDds9GXZTy5Atj4vkw5XjhtMEgx7b93zjQh924uBXT9eI
+    w5Y/a0MzqpkRrYdeWMg8ticM/Gr8xTfbK1w8xvxfRg1l/E1EZMuxXAw+0pjhuTGV
+    D8nh5BHKgiyD5G64IuwWl9vYVeGm/ddMcylQz52N9ZJibcr+swMtew08Tywm4Qmo
+    4/imjL5mTqhTnubIZiwxCSglRNowQqVL+qdYycglbcjJbBAdMa0CAqKvUio0yZd0
+    ZM4MxJCuVUUUDnp48KYkaMwS1UwEV/ZZdq/ggZ1RWA3/NyLDHUrkGc/FXgw+2yYs
+    EroYZGvZjSGHPzvaF5aekFvUQRpFzVjgKznKJwIDAQABAoIBAAE01F5yuf+hzQYy
+    p7gOI8XqzI9PUDt8Ex1+pr4o14eB1EXhr+5r+eBVnHMhGe+WQ7FFv+MmCAyMSJDL
+    bNbLSAKBlTsUflOOg9aOMfd6LfZjJEpABx/97e/SxsCJVdHjHrKPsKXxtKjt6DuL
+    Ga7Iq+Q0oLAkEyyb4pCdOF7ZGwD6tA5KpEJripluqcLqENSreQxlZluIKhUqY5Am
+    BbjJXZGg8LndBUtBmYtq2XVGDT2etFyh0xakD0Id/5LqNHIKFeChPLHLdo08JWWm
+    xOCc9K1QggQhsJMhPJKKg6TpmV0r8D802Mgz/QM2epXP+dXmEbM+LHA8qv5AIEb1
+    E1sArdECgYEA7u9TtRlHqkTnbAKhVcC1Bw9iAZQ22TBbqgXr8OU7J9tzxhK5zedl
+    bp0x5W3UvGuAo9fsk8rCivlVJ/woKJhhWx6wKCTFBlIK2XFMLs2mP1sW4dxV2di3
+    qJyioHUamatlmxPj9wWFSsMVcky5jRM1LbWa6RF9AJfowKmvF3wb8IMCgYEA84IG
+    f1MhE09ARGVGE05SDGaNSSp5+GJyzV9fLdfJcJE6y8cUtHhuPP3FI1v1zOAHxs97
+    ZVAATBbXxBTihHMn/nvGTgbhNpV7ejwBsdYZp7jWA6rWiNmaIHSS1d/X5g2I2JvF
+    Tno90acCqGLss2uUwTNFog9G0FXyh62bt/Ibxo0CgYB58OywpUk87dOJ/UGniSUa
+    iFBFbAYeDB8MA9+pXuQ08DwC37WyDyFmNZWseMQ0sUzC0cUsnDNzR9KdCITaSwKM
+    xXmz0yg2lJJy7O6riEsLVIq2FIRAHOmGhQI+j+VWffHqFlmmzUt8n1mHrv6XsDDY
+    tjFsN3+rWNvxz+fLPYzozwKBgQCZlGpwp4d23EcWXCFkT8Nj2tJFUSr4Q29QpFQt
+    X6nG+3Hv0DH42PP+N7e8Y2WVv75n37hd36UwWD/hhaKQEukokfwyfhhRCtqD75DK
+    DtTDecpRKdCBI20YBy4NAk7y45pps2Uv591Re1orxaiwSKvbZnEGk0gAYhTDCfXq
+    gCKQiQKBgGvNdLJ2hcsWjxdPjRrkMUC0jGLt85TzKOUPwBZk898RUURg07/lSKDj
+    JD1UWUI1AOBuGdi6utzojpnTWPJR3sT58Kwme2k7HpcTgqGkSGqyJOQMQIV1GSen
+    41TG1EqOwm8MDcH8CfR4rQbfcIs4JO0KDjWZZX2NkEdiLNR0Zan5
+    -----END RSA PRIVATE KEY-----
+  default_client_monitoring_artifacts:
+  - Generic.Client.Stats
+  GRPC_pool_max_size: 100
+  GRPC_pool_max_wait: 60
+  resources:
+    connections_per_second: 100
+    notifications_per_second: 30
+    max_upload_size: 104857600
+    expected_clients: 30000
+Datastore:
+  implementation: FileBaseDataStore
+  location: /opt/velociraptor
+  filestore_directory: /opt/velociraptor
+  compression: zlib
+Logging:
+  output_directory: /opt/velociraptor/logs
+  separate_logs_per_component: true
+  debug:
+    disabled: true
+  info:
+    rotation_time: 604800
+    max_age: 31536000
+  error:
+    rotation_time: 604800
+    max_age: 31536000
+Monitoring:
+  bind_address: 127.0.0.1
+  bind_port: 8003
+api_config: {}
+obfuscation_nonce: L2Y0qf1bZ4g=
+defaults:
+  hunt_expiry_hours: 168
+  notebook_cell_timeout_min: 10
+security:
+  certificate_validity_days: 365
